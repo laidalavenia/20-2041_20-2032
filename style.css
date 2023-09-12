@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.nav-ul{
+   margin: 0;
+   display: flex;
+   padding: 0;
+}
+
+.overlay{
+   display: none;
+}
+
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.dropdown{
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content{
+   border-radius: 10px;
+   padding: 20px;
+   /* display: none; */
+   position: absolute;
+   background-color: #fff;
+   width: 120px;
+   
+}
