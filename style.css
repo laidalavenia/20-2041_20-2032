@@ -159,3 +159,56 @@ p {
   transition: all 1s;
   cursor: pointer;
 }
+
+.attribution {
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    max-width: 960px;
+    grid-template-columns: repeat(2, 400px);
+  
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-btns {
+    display: none;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .hero {
+    margin: 50px;
+    max-width: 960px;
+    grid-template-columns: repeat(1, max(200px, 350px));
+  }
+  .img-container {
+    grid-row: 1;
+  }
+  .img-container img {
+    content: url(images/image-hero-mobile.png);
+    max-width: 100%;
+  }
+  .hero-text {
+    text-align: center;
+    margin: auto;
+  }
+  .hero button {
+    margin: 0;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+  
+}
