@@ -184,8 +184,8 @@ p {
   }
   .hero {
     margin: 50px;
-    max-width: 960px;
-    grid-template-columns: repeat(1, max(200px, 350px));
+    max-width: 1000px;
+    grid-template-columns: repeat(1, max(200px, 450px));
   }
   .img-container {
     grid-row: 1;
@@ -209,5 +209,14 @@ p {
   }
   br {
     display: none;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
   }
 }
