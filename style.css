@@ -5,6 +5,8 @@ body {
   margin: 0;
 }
 
+/* nav section */
+
 button {
   font-family: 'Epilogue', sans-serif;
 }
@@ -31,6 +33,7 @@ nav {
 .nav-btns {
   margin-left: auto;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .nav-btns button:nth-child(1) {
@@ -63,8 +66,8 @@ a {
   display: none;
 }
 
-.dropbtn{
-   margin-right: 30px;
+.dropbtn {
+  margin-right: 30px;
 }
 
 .dropdown {
@@ -85,7 +88,7 @@ a {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 12px;
+  padding: 12px 14px;
   display: flex;
   align-items: center;
 }
@@ -102,7 +105,108 @@ a {
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    max-width: 960px;
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-btns {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hero {
+    margin: 50px ;
+    max-width: 960px;
+    grid-template-columns: repeat(1, max(200px, 350px));
+  }
+
+  .img-container {
+    grid-row: 1;
+  }
+
+  .img-container img::before{
+    content: url(images/image-hero-mobile.png);
+    max-width: 100%;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  .hero button{
+    margin: 0;
+  }
+
+  h1{
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+  }
+
+  br{
+    display: none;
+  }
+
+  .mobile-nav{
+    
+  }
+}
+
+/* hero section */
+
 h1 {
   font-size: 70px;
   width: 500px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  grid-gap: 80px;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero button {
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 1s;
+}
+
+.hero button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: grey;
+  font-weight: bold;
+  transition: all 1s;
+  cursor: pointer;
 }
