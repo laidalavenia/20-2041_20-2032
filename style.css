@@ -213,6 +213,7 @@ p {
   .hamburgermenu {
     display: block;
   }
+
   .sub-content{
     padding: 10px ;
     display: flex;
@@ -226,7 +227,7 @@ p {
   .sub-content img{
     margin-right: 10px;
   }
-  .sub-content:hover .sub-content {
+  .sub-menu:hover .sub-content {
     display: block;
   }
   /* .sub-menu{
